@@ -29,6 +29,7 @@ console.log(stockTracker);
 
 let heartRate = 95; // Current heart rate in bpm
 
+let 
 
 console.log(`'}`);
 
