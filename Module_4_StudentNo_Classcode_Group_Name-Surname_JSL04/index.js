@@ -6,7 +6,7 @@
 
 let userPreference = "" ; // Possible values: 'Regular', 'Sugar-free', or undefined
 
-let userMessage =  (userPreference) ? 'this user prefers $("userPrefence")' : 'this user prefers Regular'
+let userMessage =  (userPreference) ? 'This user prefers $("userPrefence")' : 'This user prefers Regular'
 
 console.log(userMessage);
 
@@ -16,9 +16,9 @@ console.log(userMessage);
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
+let cansLeft = 10; // Any number of cans
 
-let stockTracker = (cansLeft < 5) ? 'Time to stock' :  "we're stocked!"
+let stockTracker = (cansLeft < 5) ? 'Time to stock' :  "We're stocked!"
 
 console.log(stockTracker);
 
@@ -29,9 +29,9 @@ console.log(stockTracker);
 
 let heartRate = 95; // Current heart rate in bpm
 
-let 
+let userHeartRate = (heartRate < 100) ? "Boost needed!" : "Energy levels are high"
 
-console.log(`'}`);
+console.log(userHeartRate);
 
 
 // #### Challenge 4: Temperature Suitability
@@ -39,7 +39,10 @@ console.log(`'}`);
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
-console.log(``);
+
+let drinkTemperature = (currentTemp <= 5) ? 'Chilled to perfection!' : 'Needs a cooler!'
+
+console.log(drinkTemperature);
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -48,13 +51,11 @@ console.log(``);
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 22; // current hour on 24-hour format
 
-// Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
-// If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
-// Otherwise, print "Better stick to water."
+let drinkMessage = (currentHour >= 7 && currentHour <= 23) ? "Unleash the beast!" : "Better stick to water.";
 
-
+console.log(drinkMessage);
 
 
 
